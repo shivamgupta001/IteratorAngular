@@ -1,12 +1,12 @@
 <ng-container *ngFor="let data of metadata">
-		<container 
+		<tf-container 
 			*ngIf="(data.type == 'container')"					
 			[metadata]="data.items" 
 			[ngClass]="(data.layout=='column')?'column':'row'"
 			[style.flex]="data.flex">
-		</container>
-		<input 
-			*ngIf="(data.type == 'textfield')" 
-			type="text" 
-			name="hamam" />		
+		</tf-container>
+		<tf-textfield
+			*ngIf="(data.type == 'textfield')"
+			[metadata]="data"
+		></tf-textfield>
 </ng-container>
