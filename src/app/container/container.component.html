@@ -1,0 +1,12 @@
+<ng-container *ngFor="let data of metadata">
+		<container 
+			*ngIf="(data.type == 'container')"					
+			[metadata]="data.items" 
+			[ngClass]="(data.layout=='column')?'column':'row'"
+			[style.flex]="data.flex">
+		</container>
+		<input 
+			*ngIf="(data.type == 'textfield')" 
+			type="text" 
+			name="hamam" />		
+</ng-container>
