@@ -7,47 +7,25 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
     
-    handleInput(){
-      console.log("input fired");
+    handleInput(e){
+      console.log("input fired",e);
     }
 
   	metadata = [{
   		type: 'container',
-  		class : 'fit',
-  		layout : 'row',
-  		flex : 1,
+  		layout :{
+        fxLayout : 'column',
+        fxLayoutAlign : 'center center'
+      },
   		items : [{
 				type : 'container',
-				flex : 1,
-        layout : 'column',
-				items : [{
-  					type : 'textfield',
-            listeners : {
-              input : this.handleInput
-            }
-  				},{
-  					type : 'textfield'
-  				},{
-  					type : 'textfield'
-  			}]  			
+        layout :{
+          fxFlex : '1'
+        }
   		},{
-  			type : 'container',
-  			flex : 1,
-  			layout : 'column',
-  			items : [{
-	  				type : 'container',
-	  				flex : 1
-	  			},{
-	  				type : 'container',
-	  				flex : 2
-	  			},{
-	  				type : 'container',
-	  				flex  : 1
-	  			}]
+  			type : 'container'
   		},{
-  			type : 'container',
-  			flex : 1,
-  			layout : 'row'
+  			type : 'container'
   		}]
   	}]
 }

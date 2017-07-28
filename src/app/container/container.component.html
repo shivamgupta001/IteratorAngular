@@ -2,9 +2,7 @@
 		<tf-container 
 			*ngIf="(data.type == 'container')"					
 			[metadata]="data.items" 
-			[ngClass]="(data.layout=='column')?'column':'row'"
-			[style.flex]="data.flex">
-		</tf-container>
+		></tf-container>
 		<tf-textfield
 			*ngIf="(data.type == 'textfield')"
 			[metadata]="data"
