@@ -11,7 +11,7 @@ export class AppComponent {
       console.log("input fired",e);
     }
 
-  	metadata = [{
+  	metadata = {
   		type: 'container',
   		layout :{
         fxLayout : 'column',
@@ -27,5 +27,5 @@ export class AppComponent {
   		},{
   			type : 'container'
   		}]
-  	}]
+  	}
 }

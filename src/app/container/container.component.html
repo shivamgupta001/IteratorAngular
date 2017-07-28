@@ -1,7 +1,8 @@
 <ng-container *ngFor="let data of metadata">
 		<tf-container 
 			*ngIf="(data.type == 'container')"					
-			[metadata]="data.items" 
+			[metadata]="data.items"
+			[scope] = "data"								
 		></tf-container>
 		<tf-textfield
 			*ngIf="(data.type == 'textfield')"

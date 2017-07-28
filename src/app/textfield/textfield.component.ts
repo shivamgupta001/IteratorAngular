@@ -24,7 +24,7 @@ export class TextfieldComponent implements OnInit {
 
 	}
 	_initialize(){
-
+		debugger;
 		this.listeners = this.metadata.listeners;
 
 	}

@@ -7,7 +7,12 @@ import { Component, OnInit, Input, ElementRef, Renderer } from '@angular/core';
 })
 export class ContainerComponent implements OnInit {
 
-	@Input() metadata : any;
+	@Input() 
+	metadata : any;
+	
+	@Input()
+	scope : any;
+
 
   	listeners : {};
   	layout : {
@@ -28,9 +33,11 @@ export class ContainerComponent implements OnInit {
 
 	}
 	_initialize(){
+		debugger;
+		var me = this.metadata;
+		/*this.listeners = me.listeners;
+		this.layout = me.layout;*/
 
-		this.listeners = this.metadata.listeners;
-		this.layout = this.layout;
 
 	}
 	_bindEvents(){
