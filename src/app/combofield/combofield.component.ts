@@ -14,13 +14,10 @@ export class CombofieldComponent implements AfterViewInit {
 	listeners : {};
 	label : '';
 	placeholder : '';
+	
+	data : any;
+	display : '';
 	value : '';
-	states = [
-		{ code: 'AL', name: 'Alabama'},
-		{ code: 'BL', name: 'Bangalore'},
-		{ code: 'MU', name: 'Mumbai'},
-		{ code: 'GU', name: 'Gujrat'}
-	];
 
   	constructor(
   		private elementRef : ElementRef,

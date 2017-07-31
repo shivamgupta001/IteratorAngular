@@ -11,7 +11,12 @@ export class AppComponent {
       console.log("input fired",e);
     }
 
-
+    states = [
+    { code: 'AL', name: 'Alabama'},
+    { code: 'BL', name: 'Bangalore'},
+    { code: 'MU', name: 'Mumbai'},
+    { code: 'GU', name: 'Gujrat'}
+  ];
 
     	metadata ={
 
@@ -60,7 +65,10 @@ export class AppComponent {
               value : 'Narayan'
             },{
               type : 'combofield',
-              placeholder : 'Enter Country'              
+              placeholder : 'Enter Country',
+              data : this.states,
+              display : 'name',
+              value : 'code'
             }]
       		}]
     	}]

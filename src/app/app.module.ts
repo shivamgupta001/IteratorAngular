@@ -9,13 +9,23 @@ import { AppComponent } from './app.component';
 import { ContainerComponent } from './container/container.component';
 import { TextfieldComponent } from './textfield/textfield.component';
 import { CombofieldComponent } from './combofield/combofield.component';
+import { CheckboxComponent } from './checkbox/checkbox.component';
+import { CheckboxfieldComponent } from './checkboxfield/checkboxfield.component';
+import { RadioComponent } from './radio/radio.component';
+import { RadiofieldComponent } from './radiofield/radiofield.component';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContainerComponent,
     TextfieldComponent,
-    CombofieldComponent
+    CombofieldComponent,
+    CheckboxComponent,
+    CheckboxfieldComponent,
+    RadioComponent,
+    RadiofieldComponent,
+    FormComponent
   ],
   imports: [
 
