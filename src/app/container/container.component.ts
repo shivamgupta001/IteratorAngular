@@ -55,17 +55,17 @@ export class ContainerComponent implements OnInit {
 			this.elementRef.nativeElement.setAttribute(attribute , this.attributes[attribute]);			
 			
 		}.bind(this));
-		
+
 	}
 	_bindEvents(){
 
-		if(this.listeners){
-			Object.keys(this.listeners).forEach(function(listener){
-				
-				this.renderer.listen(this.elementRef.nativeElement, listener , this.listeners[listener]);
-				
-			}.bind(this));	
-		}
+		//apply listener to current element
+		Object.keys(this.listeners).forEach(function(listener){
+			
+			this.renderer.listen(this.elementRef.nativeElement, listener , this.listeners[listener]);
+			
+		}.bind(this));	
+		
 	}
 
 }

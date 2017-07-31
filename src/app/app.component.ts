@@ -27,6 +27,7 @@ export class AppComponent {
             backgroundColor : 'yellow',
             border : '1px solid grey'
           },
+          
       		items : [{
     				type : 'container',
             layout :{
@@ -44,12 +45,24 @@ export class AppComponent {
             }
       		},{
       			type : 'container',
+            styles : {
+              backgroundColor : 'green'
+            },
             items : [{
-              type : 'container'
+              type : 'textfield',
+              label : 'First Name',
+              placeholder : 'Enter First Name',
+              value : 'Ram'
             },{
-              type : 'container'
+              type : 'textfield',
+              label : 'Middle Name',
+              placeholder : 'Enter Middle Name',
+              value : 'Narayan'
             },{
-              type : 'container'
+              type : 'textfield',
+              label : 'Last Name',
+              placeholder : 'Enter Last Name',
+              value : 'Chaurasia'
             }]
       		}]
     	}]
