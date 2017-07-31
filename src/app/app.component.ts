@@ -11,21 +11,36 @@ export class AppComponent {
       console.log("input fired",e);
     }
 
-  	metadata = {
-  		type: 'container',
-  		layout :{
-        fxLayout : 'column',
-        fxLayoutAlign : 'center center'
-      },
-  		items : [{
-				type : 'container',
-        layout :{
-          fxFlex : '1'
-        }
-  		},{
-  			type : 'container'
-  		},{
-  			type : 'container'
-  		}]
-  	}
+
+
+    	metadata ={
+
+        items : [{
+
+      		type: 'container',
+      		layout :{
+            fxLayout : 'column',
+            fxLayoutAlign : 'center center'
+          },
+      		items : [{
+    				type : 'container',
+            layout :{
+              fxFlex : '1'
+            }
+      		},{
+      			type : 'container'
+      		},{
+      			type : 'container',
+            items : [{
+              type : 'container'
+            },{
+              type : 'container'
+            },{
+              type : 'container'
+            }]
+      		}]
+    	}]
+    }
+
+
 }
