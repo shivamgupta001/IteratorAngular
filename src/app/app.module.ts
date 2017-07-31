@@ -8,12 +8,14 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppComponent } from './app.component';
 import { ContainerComponent } from './container/container.component';
 import { TextfieldComponent } from './textfield/textfield.component';
+import { CombofieldComponent } from './combofield/combofield.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContainerComponent,
-    TextfieldComponent
+    TextfieldComponent,
+    CombofieldComponent
   ],
   imports: [
 

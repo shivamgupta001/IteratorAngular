@@ -23,4 +23,8 @@
 			*ngIf="(data.type == 'textfield')"
 			[metadata]="data"
 		></tf-textfield>
+		<tf-combofield
+			*ngIf="(data.type == 'combofield')"
+			[metadata]="data"
+		></tf-combofield>
 </ng-container>

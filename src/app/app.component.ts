@@ -59,10 +59,8 @@ export class AppComponent {
               placeholder : 'Enter Middle Name',
               value : 'Narayan'
             },{
-              type : 'textfield',
-              label : 'Last Name',
-              placeholder : 'Enter Last Name',
-              value : 'Chaurasia'
+              type : 'combofield',
+              placeholder : 'Enter Country'              
             }]
       		}]
     	}]
