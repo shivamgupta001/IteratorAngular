@@ -1,8 +1,12 @@
 <ng-container *ngFor="let data of metadata.items">
 		<tf-container 
-			*ngIf="(data.type == 'container')"					
-			[metadata]="data"
-			[scope] = "data"								
+			*ngIf = "(data.type == 'container')"
+			#tfContainer					
+			[metadata] = "data"
+			[fxLayout] = "layout.fxLayout"
+			[fxLayoutAlign] = "layout.fxLayoutAlign"
+			[fxLayoutGap] = "layout.fxLayoutGap"
+			[fxFlex] = "layout.fxFlex"										
 		></tf-container>
 		<tf-textfield
 			*ngIf="(data.type == 'textfield')"

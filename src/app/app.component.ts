@@ -20,15 +20,28 @@ export class AppComponent {
       		type: 'container',
       		layout :{
             fxLayout : 'column',
-            fxLayoutAlign : 'center center'
+            fxLayoutAlign : 'center center',
+            fxFlex : 30
+          },
+          styles : {
+            backgroundColor : 'yellow',
+            border : '1px solid grey'
           },
       		items : [{
     				type : 'container',
             layout :{
               fxFlex : '1'
+            },
+            styles : {
+              backgroundColor : 'orange',
+              border : '1px solid yellow'
             }
       		},{
-      			type : 'container'
+      			type : 'container',
+            styles : {
+              backgroundColor : 'red',
+              border : '1px solid brown'
+            }
       		},{
       			type : 'container',
             items : [{
